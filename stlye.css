@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  --spacing: 0.25rem;
+  --width: 8rem;
+  --height: calc(var(--width) * 2);
+
+  font-family: "Comic Sans MS", "Comic Sans", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background: rgba(110, 4, 0, 0.86);
+  color: aliceblue;
+}
+
+main#gallery {
+  margin-top: 2rem;
+  max-width: 80vw;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.character-card {
+  margin: var(--spacing);
+  padding: var(--spacing);
+  width: var(--width);
+  min-height: var(--height);
+  background: rgb(33, 33, 33);
+}
+
+.character-card:hover {
+  outline: 1px solid white;
+}
+
+.character-card > img {
+  width: 125px;
+  height: 128px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.character-card > a {
+  color: aliceblue;
+  text-decoration: none;
+}
+
+.character-card > a:hover {
+  color: lightgoldenrodyellow;
+  text-decoration: underline;
+}
+
+.character-card .name-first-line {
+  text-align: center;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.character-card .name-second-line {
+  text-align: center;
+}
